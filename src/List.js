@@ -34,16 +34,16 @@ deleteItem() {
     }
         render() {
             return(
-                <div>
+                <div className="container">
                     <form onSubmit = {this.onFormSubmit}>
-                    <div className="main container">
+                    <div className="main">
                     <input type='text' onChange={(e) =>{this.onChangeEvent(e.target.value)}}
                     value={this.state.userInput} />
                 </div>
-                <div className="main container">
+                <div className="main">
                     <button onClick={()=>this.addItem (this.state.userInput)} className="btn">Add</button>
                     </div>
-                    <div className="main container">
+                    <div className="main">
                     <ul>
                     {this.state.todoList.map((item,index) => (
                     <li key ={index} onClick= {this.deleteWord}>
@@ -52,7 +52,7 @@ deleteItem() {
                 ))}
                 </ul>
                 </div>
-                <div className="main container">
+                <div className="main">
                 <button onClick={() => this.deleteItem()} className="btn1">Delete</button>
                 </div>
                 </form>

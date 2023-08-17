@@ -1,4 +1,8 @@
-
+body {
+  background-image: url("./plan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .line {
   text-decoration: line-through 2px red;
 }
@@ -7,8 +11,7 @@ ul, li {
   margin: 0;
   font-family: 'Dancing Script', cursive;
   font-size: 25px;
-  color: red;
-  position: absolute;
+  color: #F0DE36;
 }
 h1 {
   font-family: 'Dancing Script', cursive;
@@ -24,7 +27,6 @@ h1 {
   width: 20%;
   border: none;
   font-size: 20px;
-  position: absolute;
   bottom: 300px;
 }
 .btn1 {
@@ -34,22 +36,21 @@ h1 {
   width: 20%;
   border: none;
   font-size: 20px;
-  position: absolute;
   bottom: 200px;
 }
 input {
   padding: 10px;
   margin: 10px;
   width: 20%;
-  position: absolute;
   bottom: 400px;
-}
-.container {
-  position: relative;
 }
 .container img {
   height: auto;
 }
+.container {
+  margin-top: 220px;
+}
+
 
 
 
